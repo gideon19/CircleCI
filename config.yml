@@ -1,0 +1,11 @@
+version: 2.1
+
+job:
+  test:
+    docker:
+      #- image: cimg/node 14.13.1
+      - image: cimg/base:stable
+      step:
+      checkout:
+        name: "Say Hello"
+        command: "echo, Hello world"
